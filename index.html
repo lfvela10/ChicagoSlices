@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza Map!</title>
+    <!-- css -->
+<link rel="stylesheet" type="text/css" href="findPizzaGrid.css">
+    <!-- font -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <!-- jquery lib --> 
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <!-- font poppin -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet">
+<meta charset='utf-8' />
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <!-- mapbox tiles -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+    #map { position:absolute; top:0; bottom:0; width:100%; height: 100%}
+</style>
+</head>
+<body  onload="setTimeout(myFunction, 3000);">
+
+    <!-- main container -->
+ 
+    <div class="grid-container">
+      
+     
+        
+  <div class='sidebar pad2' id="menu">
+      
+      
+      <div class="center" id='slice'>
+        
+          <img src="newPizza.png" alt="A coral colored triangle with  a line throught the lower part of it. Together they resemble pizza." width="90" height="65" >
+    <p style="float: right;" id="chicagoSlice"><strong>Chicago Slice</strong></p>
+  
+ 
+     </div> 
+   
+     
+   <div id="accordion">
+          
+     
+         <h3 class="name" id="bacci">Bacci's Pizza</h3>
+             <div>
+             <p class="phoneNumber">UIC - (312) 455-9000</p>
+             <img src="bacci.jpg"  alt="Smiley face" height="200" width="270">
+             </div>
+
+         
+  
+        <h3 class="name" id="dimos">Dimos</h3>
+        <div>
+             <p class="phoneNumber">Chicago - (773) 525-4580 </p>
+             <img src="dimos.jpg"  alt="Smiley face" height="200" width="270">
+         </div>
+       
+       <h3 class="name" id="dinicos">Di Nico's</h3>
+        <div>
+             <p class="phoneNumber">Berwyn - (708) 749-9900 </p>
+             <img src="dinicos.jpg"  alt="Smiley face" height="200" width="270">
+         </div>
+       
+         <h3 class="name" id="fornoRosso">Forno Rosso</h3>
+        <div>
+             <p class="phoneNumber">Chicago - (312) 243-6000</p>
+             <img src="fornoRosso.jpg"  alt="Smiley face" height="200" width="270">
+       </div>
+       
+      
+      <h3 class="name" id="giordanos">Giordanos</h3>
+        <div>
+             <p class="phoneNumber">Chicago - (708) 349-7500</p>
+             <img src="giordanos.jpg"  alt="Smiley face" height="200" width="270">
+         </div>
+      
+       <h3 class="name" id="homeSlice">Homeslice</h3>
+        <div>
+             <p class="phoneNumber">Chicago - (312) 789-4600</p>
+             <img src="homeslice.dms"  alt="Smiley face" height="200" width="270">
+         </div>
+       
+       <h3 class="name" id="pequods">Pequods</h3>
+        <div>
+             <p class="phoneNumber">Chicago - (773) 327-1512</p>
+             <img src="pequods.jpg"  alt="Smiley face" height="200" width="270">
+         </div>
+       
+       <h3 class="name" id="positanos">Positano's</h3>
+        <div>
+             <p class="phoneNumber">Chicago - (773) 284-7745</p>
+             <img src="positanos.jpg"  alt="Smiley face" height="200" width="270">
+         </div>
+       
+       <h3 class="name" id="spacca">Spacca Napoli</h3>
+        <div>
+             <p class="phoneNumber">Chicago - (773) 878-2420</p>
+             <img src="spacca.jpg"  alt="Smiley face" height="200" width="270">
+         </div>
+    
+        
+      </div> <!-- ends accordion -->
+      
+     
+        </div>
+        
+        <div class="right" id='right'>
+          <div id='map'> </div>
+        </div>
+  
+</div>    <!-- ends entire container -->
+
+    
+    
+    
+<!-- code from map box -->
+     
+
+<script src='findPizzaGrid.js'></script>
+</body>
+</html>

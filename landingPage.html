@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+#logo{
+     margin-top: 30px;   
+}
+
+    #bgImage{
+        margin-top: -8vw;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="grid-container">
+    
+  <div class="grid-item" id="logo">
+      <img src="background.png" id="bgImage" alt="A coral colored triangle with  a line throught the lower part of it. Together they resemble pizza." width="90%" height="100%" >
+    </div>
+    
+  
+   
+</div> <!-- Ends grid container -->
+<script>
+$( "#bgImage" ).click(function() {
+  location.replace("index.html");
+});
+</script>
+</body>
+</html>
